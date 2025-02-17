@@ -40,3 +40,13 @@
 //     }
 
 // }
+
+// let Name = prompt("Enter your full name without spaces");
+// let userName = "@" + Name + Name.length;
+// console.log(userName);  
+// let marks = [97, 82, 44 ,56];
+// console.log(marks); 
+
+// const arrowMultiplication = (x,y) => {
+//     console.log(x*y);
+// }
