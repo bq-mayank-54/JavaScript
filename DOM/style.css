@@ -1,5 +1,35 @@
-.heading-class{
+/* .heading-class{
     color: blue;
     /* text-decoration: line-through; */
-    background-color: yellow;
+    /* background-color: yellow;
 }
+body{
+    background-color: orange;
+} */ 
+
+/* #box{
+    height: 200px;
+    width: 100px;
+    border: 1px solid black;
+    margin: 5px;
+    text-align: center;
+    background-color: aquamarine;
+} 
+ */
+
+ /* .para{
+    color: red; */
+    /* background-color: antiquewhite; */
+ /* }
+
+ .newClass{
+    background-color: aqua;
+ } */
+
+ div{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    color: red;
+    border: 2px solid black;
+ }

@@ -1,21 +1,30 @@
-// regular function
+// console.log(x);
+// var x = 5;
+// // console.log(y);
+// // let y = 10;
 
-function fn1(){
-  console.log("in the function f1")
-}
+// function test() {
+//     console.log(a);
+//     var a = 20;
+//     // console.log(b);
+//     // let b = 30;
+// }
+// test();
 
-fn1();
+// console.log(sum(3, 4));
+// function sum(a, b) {
+//     return a + b;
+// }
 
-// expression function 
-const function_call = function fn2(){
-  console.log("in the function f2")
-}
+// console.log(multiply(2, 3));
+// const multiply = (a, b) => a * b;
+// let a;
+// let b = null;
+// console.log(a === b)
 
-function_call();
+// let age = 18;
+// const ofAge = age>19;
 
+// console.log(ofAge);
 
-(
-  function fn3(){
-    console.log("in the function f3");
-  }
-)();
+console.log(Date.now())
