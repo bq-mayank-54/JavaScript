@@ -56,8 +56,8 @@
 // d
 
 
-let h2 = document.querySelector("h2");
-console.dir(h2);
+// let h2 = document.querySelector("h2");
+// console.dir(h2);
 
 
 // // // let h2 = document.querySelector("h2");
@@ -128,20 +128,189 @@ Solve this problem using classList. */
 // let p = document.querySelector("p");
 
 
-let btn1 = document.querySelector("#btn1");
-btn1.onclick = (evt) => {
-    console.log(evt);
-    console.log(evt.type);
-    console.log(evt.target);
-    console.log(evt.clientX, evt.clientY);
-    // console.log("button was clicked");
-}
+// let btn1 = document.querySelector("#btn1");
+// btn1.onclick = (evt) => {
+//     console.log(evt);
+//     console.log(evt.type);
+//     console.log(evt.target);
+//     console.log(evt.clientX, evt.clientY);
+//     // console.log("button was clicked");
+// }
 
-let div = document.querySelector("div");
-div.onmouseover = (evt) => {
-    console.log(evt);
-    console.log(evt.type);
-    console.log(evt.target);
-    console.log(evt.clientX, evt.clientY);
-    // console.log("you are inside div")
-}
+// let div = document.querySelector("div");
+// div.onmouseover = (evt) => {
+//     console.log(evt);
+//     console.log(evt.type);
+//     console.log(evt.target);
+//     console.log(evt.clientX, evt.clientY);
+//     // console.log("you are inside div")
+// }
+
+// let btn1 = document.querySelector("#btn1");
+
+// btn1.addEventListener("click", (evt) => {
+//     console.log("button one was clicked - handler-1");
+//     // console.log(evt);
+//     // console.log(evt.type);
+// });
+
+// btn1.addEventListener("click", (evt) => {
+//     console.log("button one was clicked - handler-2");
+//     // console.log(evt);
+//     // console.log(evt.type);
+// });
+
+// btn1.addEventListener("click", (evt) => {
+//     console.log("button one was clicked - handler-3");
+//     // console.log(evt);
+//     // console.log(evt.type);
+// });
+
+// btn1.addEventListener("click", (evt) => {
+//     console.log("button one was clicked - handler-4");
+//     // console.log(evt);
+//     // console.log(evt.type);
+// });
+
+// // btn1.addEventListener("click", () => {
+// //     console.log("button was clicked - handler2")
+// // })
+
+// const handler4 = (evt) => {
+//     console.log("button one was clicked - handler-4");
+//     // console.log(evt);
+//     // console.log(evt.type);
+// }
+
+// btn1.removeEventListener("click", handler4);
+
+// let btn1 = document.querySelector("#btn1");
+
+// btn1.addEventListener("click", () => {
+//     console.log("button one was clicked - handler-1");
+// });
+
+// btn1.addEventListener("click", () => {
+//     console.log("button one was clicked - handler-2");
+// });
+
+// btn1.addEventListener("click", () => {
+//     console.log("button one was clicked - handler-3");
+// });
+
+// const handler4 =() => {
+//     console.log("button one was clicked - handler-4");
+// };
+
+// btn1.addEventListener("click",() => {
+//     console.log("button one was clicked - handler-4");
+// });
+
+
+// btn1.removeEventListener("click", handler4); 
+
+
+//Q chage mode
+
+// let modeBtn = document.querySelector("#mode");
+// let currMode = "light";
+// let body = document.querySelector("body");
+
+// modeBtn.addEventListener("click", () => {
+//     if(currMode === "light"){
+//         currMode = "dark"
+//         // body.style.backgroundColor = "black";
+
+//         body.classList.add("dark");
+//         body.classList.remove("light");
+//     }
+//     else {
+//         currMode = "light";
+//         // body.style.backgroundColor = "white";
+
+
+//         body.classList.add("light");
+//         body.classList.remove("dark");
+//     }
+
+//     console.log(currMode);
+// });
+
+// console.log(x);
+// var x = 4;
+
+// console.log(y);
+// let y = 5;
+
+// function test() {
+//     console.log(a);
+//     var a = 20;
+//     console.log(b);
+//     let b = 30;
+// }
+
+// test();
+
+// console.log(sum(3, 4));
+// function sum(a, b) {
+//     return a + b;
+// }
+
+// console.log(multiply(2, 3));
+// const multiply = (a, b) => a * b;
+
+// function createGame(gameName) {
+//     let score = 0;
+
+//     return function win(){
+//         score++;
+//         return `Game Name ${gameName} and score ${score}`;
+//     }
+// }
+
+// const hockeyGame = createGame("Hockey");
+
+// const cricketGame = createGame("crickeet");
+
+// setTimeout(function ()  {
+//     console.log("done time to eat");
+// }, 1000);
+
+// let arr = [1, 2, 3, 4, 5, 6];
+// let [first, second, ...rest] = arr; 
+
+// const student = {
+//     name: "Rahul",
+//     age: 20,
+//     details: {
+//         cgpa: 8.2,
+//         grade: "A",
+//     },
+//     college: "LNCT"
+// };
+
+// const{name, age, details: {cgpa, grade}, college } = student;
+
+// const person1 = {
+//     fullName : function() {
+//         return this.firstName + " " + this.lastName;
+//     }
+// }
+
+//     const person2 = {
+//         firstName: "John",
+//         lastName: "Doe" 
+//     }
+
+//     const person3 = {
+//         firstName: "John",
+//         lastName: "Dev" 
+//     }
+
+//     console.log(person1.fullName.call(person3) );
+
+const heading = document.querySelector("h2");
+
+console.log(heading.textContent);
+console.log(heading.innerText);
+
