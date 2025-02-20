@@ -43,24 +43,27 @@
 
 //Inheritance
 
-class Car {
-    constructor(brand) {
-        this.carname = brand;
-    }
-    present() {
-        return `I have a ` + this.carname;
-    }
-}
+// class Car {
+//     constructor(brand) {
+//         this.carname = brand;
+//     }
+//     present() {
+//         return `I have a ` + this.carname;
+//     }
+// }
 
-class Model extends Car {
-    constructor(brand, mod) {
-        super(brand);
-        this.Model = mod;
-    }
-    show() {
-        return this.present() + ', it is a ' + this.Model;
-    }
-}
+// class Model extends Car {
+//     constructor(brand, mod) {
+//         super(brand);
+//         this.Model = mod;
+//     }
+//     show() {
+//         return this.present() + ', it is a ' + this.Model;
+//     }
+// }
 
-let myCar = new Model("Ford", "Mustang");
-document.getElementById("demo").innerHTML = myCar.show();
+// let myCar = new Model("Ford", "Mustang");
+// document.getElementById("demo").innerHTML = myCar.show();
+
+const myDate = new Date('August 11, 2025');
+console.log(my)
