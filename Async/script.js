@@ -193,14 +193,14 @@
 //     console.log("hello");
 // }
 
-function getData(dataId) {
-    return new Promise( (resolve, reject) => {
-        setTimeout(() => {
-            console.log("data", dataId);
-            resolve("Success");
-        }, 2000);
-    });
-}
+// function getData(dataId) {
+//     return new Promise( (resolve, reject) => {
+//         setTimeout(() => {
+//             console.log("data", dataId);
+//             resolve("Success");
+//         }, 2000);
+//     });
+// }
 
 // async function getAllData() {
 //     console.log("Getting data 1 ...");
@@ -217,19 +217,31 @@ function getData(dataId) {
 //     await getData(6);
 // }
 
-(async function () {
-    console.log("Getting data 1 ...");
-    await getData(1);
-    console.log("Getting data 2 ...");
-    await getData(2);
-    console.log("Getting data 3 ...");
-    await getData(3);
-    console.log("Getting data 4 ...");
-    await getData(4);
-    console.log("Getting data 5 ...");
-    await getData(5);
-    console.log("Getting data 6 ...");
-    await getData(6);
-})();
+// (async function () {
+//     console.log("Getting data 1 ...");
+//     await getData(1);
+//     console.log("Getting data 2 ...");
+//     await getData(2);
+//     console.log("Getting data 3 ...");
+//     await getData(3);
+//     console.log("Getting data 4 ...");
+//     await getData(4);
+//     console.log("Getting data 5 ...");
+//     await getData(5);
+//     console.log("Getting data 6 ...");
+//     await getData(6);
+// })();
 
 // getAllData();
+
+let promise = new Promise( () => {
+    console.log("abajfj");
+})
+
+setTimeout(() => {
+    console.log("jkj")
+}, 10);
+
+
+
+// console.log(promise);

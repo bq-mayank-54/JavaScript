@@ -50,3 +50,42 @@
 // const arrowMultiplication = (x,y) => {
 //     console.log(x*y);
 // }
+
+
+// let idx = [1, 2, 3, 4, 5];
+
+// let newValues = idx.map( (value) => {
+//     return new Promise( (response, regret) => {
+//         fetch(`https://jsonplaceholder.typicode.com/posts/${value}`);
+//         response("succes");
+//         regret("error");
+//     })
+// })
+
+// const urls = [
+//     `https://jsonplaceholder.typicode.com/posts/1`,
+//     `https://jsonplaceholder.typicode.com/posts/2`,
+//     `https://jsonplaceholder.typicode.com/posts/3`,
+//     `https://jsonplaceholder.typicode.com/posts/4`,
+//     `https://jsonplaceholder.typicode.com/posts/5`,
+// ];
+
+const urls = [
+    "https://jsonplaceholder.typicode.com/posts/1",
+    "https://jsonplaceholder.typicode.com/posts/2",
+    "https://jsonplaceholder.typicode.com/posts/3",
+    "https://jsonplaceholder.typicode.com/posts/4",
+    "https://jsonplaceholder.typicode.com/posts/5"
+];
+
+
+let Result = urls.map(url => fetch(url).then(response => response.json()));
+
+
+Promise.all(Result)
+    .then(results => {
+        console.log("responses:", results);
+    })
+    .catch(error => {
+        console.error("error :", error);
+    });

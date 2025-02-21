@@ -309,8 +309,57 @@ Solve this problem using classList. */
 
 //     console.log(person1.fullName.call(person3) );
 
-const heading = document.querySelector("h2");
+// const heading = document.querySelector("h2");
 
-console.log(heading.textContent);
-console.log(heading.innerText);
+// console.log(heading.textContent);
+// console.log(heading.innerText);
 
+
+// const p = document.getElementById("demo");
+
+// let body = document.querySelector("body");
+// body.innerHTML = 
+// p.style.backgroundColor = "yellow";
+// // p.style.backgroundColor = "blue";
+
+
+// p.style.color = "blue";
+
+
+// let newElement = document.createElement("p");
+// newElement.textContent = "Hello, this is a new paragraph";
+
+// let element = document.getElementById("myElement");
+
+// element.innerHTML = "<strong> Updated Content </strong>"
+
+// element.remove();
+
+let body = document.body;
+
+// let newElement = document.createElement("div");
+// body.insertAdjacentElement("beforeEnd", newElement);
+// newElement.textContent = "I am a replacement";
+// document.body.replaceChild(newElement, element);
+
+let newBtn = document.createElement("button");
+newBtn.textContent = "Dark Mode";
+body.insertAdjacentElement("afterbegin", newBtn);
+
+
+newBtn.addEventListener("click", () => {
+    // let x = 1;
+
+    // if(x == 0){
+    //     body.style.backgroundColor = "black";
+    //     x = 1;
+    //     console.log("black");
+    // }
+    // else{
+    //     body.style.backgroundColor = "white";
+    //     console.log("white");
+    //     x = 0;
+    // }
+
+    document.body.classList.toggle("dark-mode");
+})
