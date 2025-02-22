@@ -10,9 +10,14 @@ span {
 }
 
 button {
-    margin: 2px;
+    margin: 5px;
     height: 50px;
     width: 50px;
 }
 
+input {
+    font-size: large;
+    padding: 5px;
+    width: 150px;
+}
 

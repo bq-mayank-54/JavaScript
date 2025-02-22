@@ -68,20 +68,29 @@
 
 // let counter = prompt("Enter the initial value of counter");
 
-let counter = prompt("Enter the initial value of counter");
+// let counter = prompt("Enter the initial value of counter");
+
+let counter = 0;
 let count = document.getElementById("count");
 
-count.textContent = counter;
+function setCounter() {
+    let inputValue = document.getElementById("inputValue").value;
+    if (inputValue === "" || isNaN(inputValue)) {
+        alert("Please enter a valid number");
+        return;
+    }
+    counter = parseInt(inputValue);
+    count.textContent = counter;
+}
+
+// count.textContent = counter;
 
     function negative() {
         if(counter > 0){
 
-            count.addEventListener("click", () => {
-                
-            })
+            counter--;
+            count.textContent = counter;                
 
-        counter--;
-        count.textContent = counter;
         }
     }
 
@@ -94,3 +103,6 @@ count.textContent = counter;
         counter = 0;
         document.getElementById("count").textContent = counter;
     }
+
+
+    

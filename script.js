@@ -83,8 +83,8 @@ let Result = urls.map(url => fetch(url).then(response => response.json()));
 
 
 Promise.all(Result)
-    .then(results => {
-        console.log("responses:", results);
+    .then(res => {
+        console.log("responses:", res);
     })
     .catch(error => {
         console.error("error :", error);
