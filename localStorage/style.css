@@ -1,0 +1,9 @@
+/* .mode{
+    background-color: black;
+    color: white;
+} */
+
+body.dark-mode {
+            background-color: black;
+            color: white;
+        }

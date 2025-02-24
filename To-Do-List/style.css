@@ -157,7 +157,7 @@ button:hover {
 }
 
 .delete-btn {
-    background: red;
+    background: white;
     border: none;
     color: white;
     padding: 5px;
@@ -165,7 +165,7 @@ button:hover {
 }
 
 .edit-btn {
-    background: orange;
+    background: white;
     border: none;
     color: white;
     padding: 5px;
