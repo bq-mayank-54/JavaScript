@@ -1,0 +1,160 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Card with Dark Mode</title>
+
+    <!-- <script>
+        tailwind.config = {darkMode: 'class'}
+    </script> -->
+    <script>
+        tailwind.config = { darkMode: 'class' }
+      </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <style>
+        body{
+            transition: backgroud-color 0.3s, color 0.3s;
+        }
+
+        .dark {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900">
+
+    <div class="flex items-center justify-center min-h-screen">
+
+        <div class="max-w-md bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
+
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4 text-center">
+               Pro Plan 
+            </h2>
+
+            <p class="text-gray-600 dark:text-gray-300 text-center mb-6">
+                $29/month
+            </p>
+
+            <ul class="mb-6 space-y-2">
+
+                <li class="flex items-center">
+
+                    <svg
+                    class="w-5 h-5 text-green-500"
+                    fill = "none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    >
+
+                    <path
+                    stroke-licecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7">
+                    </path>
+                </svg>
+
+                <span class="ml-2 text-gray-700 dark:text-gray-200">
+                    Unlimited projects
+                </span>
+        
+                </li>
+
+                <li class="flex items-center">
+
+                    <svg
+                    class="w-5 h-5 text-green-500"
+                    fill = "none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    >
+
+                    <path
+                    stroke-licecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7">
+                    </path>
+                </svg>
+
+                <span class="ml-2 text-gray-700 dark:text-gray-200">
+                    24/7 Support
+                </span>
+        
+                </li>
+
+                <li class="flex items-center">
+
+                    <svg
+                    class="w-5 h-5 text-green-500"
+                    fill = "none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    >
+
+                    <path
+                    stroke-licecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7">
+                    </path>
+                </svg>
+
+                <span class="ml-2 text-gray-700 dark:text-gray-200">
+                    Advanced analytics
+                </span>
+        
+                </li>
+
+            </ul>
+
+            <button class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 rounded mb-4">
+                Choose Plan
+            </button>
+
+            <button id="toggleDarkMode" class="w-full border border-gray-300 dark:border-gray-600 text-gray-800 dark:text-gray-200 font-medium py-2 rounded">
+                Toggle Dark Mode
+            </button>
+        </div>
+    </div>
+    
+    <script>
+       const toggleBtn = document.getElementById('toggleDarkMode');
+       const body = document.querySelector("body");
+      // Add click event listener to toggle dark mode
+      toggleBtn.addEventListener('click', () => {
+        // Toggle the 'dark' class on the <html> element
+        // document.documentElement.classList.toggle('dark');
+        body.classList.toggle("dark");
+        // Save the user's preference in localStorage
+        if (document.documentElement.classList.contains('dark')) {
+          localStorage.setItem('theme', 'dark');
+        } else {
+          localStorage.setItem('theme', 'light');
+        }
+      });
+      // On page load, check for a saved theme preference and apply dark mode if needed
+      if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.classList.add('dark');
+      }
+    </script>
+
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggleButton = document.getElementById("darkModeToggle");
+            toggleButton.addEventListener("click", function () {
+                document.documentElement.classList.toggle("dark");
+            });
+        });
+    </script> -->
+    
+</body>
+</html> -->
